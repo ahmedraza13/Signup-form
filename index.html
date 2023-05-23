@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h1>Sign Up</h1>
+      <p>It's quick and easy</p>
+      <hr />
+      <div class="input-fields">
+        <input type="text" placeholder="First name" required />
+        <input type="text" placeholder="Last name" required />
+        <br />
+        <input
+          type="email"
+          type="number"
+          placeholder="Mobile number or email address"
+          required
+          class="input-tags"
+        />
+        <br />
+        <input
+          type="number"
+          placeholder="New Password"
+          minlength="5"
+          required
+          class="input-tags"
+        />
+        <br />
+        <label for="dateOfBirth">Date of Birth</label> <br />
+        <input type="date" id="dateOfBirth"  class="input-tags"/> <br />
+        <label for="Gender">Gender</label> <br />
+        <input type="radio" id="genderMale" name="gender" value="Male" />
+        <label for="genderMale">Male</label>
+        <input type="radio" id="genderFemale" name="gender" value="Female" />
+        <label for="genderMale">Female</label>
+        <input type="radio" id="genderCustom" name="gender" value="Custom" />
+        <label for="genderMale">Custom</label>
+      </div>
+      <p id="para">
+        By clicking sign Up, you agree to our
+        <a href="#">Terms Data Policy</a> and <a href="#">Cookie Policy</a> You
+        may receive SMS notifications from us and can opt out anytime.
+      </p>
+      <button value="Submit" id="submit-btn">Sign Up</button>
+    </div>
+  </body>
+</html>
